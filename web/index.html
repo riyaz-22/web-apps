@@ -4,22 +4,27 @@
   <title>Signup</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body><br><br><br><br>
-  <center>
-  <form id="signupForm">
-    <h1>REGISTER</h1>
+<body>
+  <div class="container mt-5">
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Signup</button>
+      <p class="mt-3">Already have an account? <a href="login.html"> Login here </a></p>
+    </form>
+  </div>
 
-    <input type="text" name="username" placeholder="Username">
-    <input type="email" name="email" placeholder="Email">
-    <input type="password" name="password" placeholder="Password">
-    <button type="submit">Signup</button><br>
-  <p>Already have an account? <a href="login.html">Login here!</a></p>
-  </center>
-  </form>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/signup.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/signup.js"></script>
 </html>
-
